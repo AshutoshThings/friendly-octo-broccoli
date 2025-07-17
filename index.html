@@ -5,37 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cal-Q-Later</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="calc">
     <div class="container">
-        <div class="headerLabel">Cal-Q-Later</div>
+            <span class="headerLabel">Cal-Q-Later</span>
+            <span class="operationTitle">(Operation-Mode)</span>
         <div class="display">
-            <input type="text" placeholder="Digital Display" readonly>
+            <input type="text" placeholder="Display" id="inputDisplay" readonly>
         </div>
         <div class="utilityButtons">
-            <button>A/C</button>
-            <button id="on">ON</button>
-            <button id="off">OFF</button>
+            <button id="ac" class="utlbtn">A/C</button>
+            <button id="on" class="utlbtn">ON</button>
+            <button id="off" class="utlbtn">OFF</button>
         </div>
         <div class="valueButtons">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operation">*</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operation">/</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operation">-</button>
-            <button>.</button>
-            <button>0</button>
-            <button class="operation">+</button>
-            <button class="operation">=</button>
+            <button id="key7" class="keyValue">7</button>
+            <button id="key8" class="keyValue">8</button>
+            <button id="key9" class="keyValue">9</button>
+            <button id='operationMul' class="operation">*</button>
+            <button id="key4" class="keyValue">4</button>
+            <button id="key5" class="keyValue">5</button>
+            <button id="key6" class="keyValue">6</button>
+            <button id='operationDiv' class="operation">/</button>
+            <button id="key1" class="keyValue">1</button>
+            <button id="key2" class="keyValue">2</button>
+            <button id="key3" class="keyValue">3</button>
+            <button id='operationSub'class="operation">-</button>
+            <button id="key." class="keyValue">.</button>
+            <button id="key0" class="keyValue">0</button>
+            <button id='operationAdd' class="operation">+</button>
+            <button id='operationEqual' class="operation">=</button>
         </div>
     </div>
     </div>
